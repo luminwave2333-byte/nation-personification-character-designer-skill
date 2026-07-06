@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NationPersonificationAssetManifest",
+  "type": "object",
+  "required": [
+    "manifest_version",
+    "source_profile",
+    "character_id",
+    "mode",
+    "assets",
+    "batch_report"
+  ],
+  "properties": {
+    "manifest_version": {
+      "type": "string"
+    },
+    "character_id": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "AUTO_DECOMPOSE",
+        "CHARACTER_SPLIT",
+        "MATERIAL_SPLIT",
+        "PROP_SPLIT",
+        "CUTOUT",
+        "ASSET_PACK"
+      ]
+    },
+    "source_profile": {
+      "type": "object",
+      "required": [
+        "source_type",
+        "subject_count",
+        "background_complexity",
+        "text_density",
+        "source_resolution_quality",
+        "extraction_feasibility"
+      ],
+      "properties": {
+        "source_type": {
+          "enum": [
+            "CHARACTER_SHEET",
+            "SINGLE_CHARACTER",
+            "GROUP_CAST",
+            "SCENE",
+            "PROP_SHEET",
+            "MATERIAL_BOARD",
+            "MIXED_BOARD"
+          ]
+        },
+        "subject_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "panel_count_estimate": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "background_complexity": {
+          "enum": ["LOW", "MEDIUM", "HIGH"]
+        },
+        "text_density": {
+          "enum": ["LOW", "MEDIUM", "HIGH"]
+        },
+        "source_resolution_quality": {
+          "enum": ["LOW", "MEDIUM", "HIGH"]
+        },
+        "extraction_feasibility": {
+          "enum": ["LOW", "MEDIUM", "HIGH"]
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "asset_type",
+          "priority",
+          "source_visibility",
+          "source_status",
+          "occluded",
+          "transparency_target",
+          "preserve_exact_design",
+          "filename"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "asset_type": {
+            "enum": [
+              "CHARACTER_FULLBODY",
+              "CHARACTER_HEAD",
+              "FACE",
+              "HAIR",
+              "HEADPIECE",
+              "GARMENT_BASE",
+              "GARMENT_UPPER",
+              "SHOULDER_SLEEVE",
+              "WAIST_HARDWARE",
+              "GARMENT_LOWER",
+              "LEG_LEFT",
+              "LEG_RIGHT",
+              "FOOTWEAR_LEFT",
+              "FOOTWEAR_RIGHT",
+              "PROP_HANDHELD",
+              "PROP_WORN",
+              "PROP_ATTACHED",
+              "PROP_BACK",
+              "MATERIAL",
+              "MOTIF_H1",
+              "MOTIF_H2",
+              "ORNAMENT",
+              "TEXTURE_TEXT",
+              "MOTION_ELEMENT"
+            ]
+          },
+          "priority": {
+            "enum": ["P0", "P1", "P2", "P3"]
+          },
+          "source_visibility": {
+            "enum": ["FULL", "PARTIAL", "HIDDEN"]
+          },
+          "source_status": {
+            "enum": ["SOURCE_DERIVED", "INFERRED", "REDESIGNED"]
+          },
+          "occluded": {
+            "type": "boolean"
+          },
+          "bbox_description": {
+            "type": "string"
+          },
+          "edge_complexity": {
+            "enum": ["LOW", "MEDIUM", "HIGH"]
+          },
+          "alpha_uncertain": {
+            "type": "boolean"
+          },
+          "character_dependency": {
+            "enum": ["independent", "held", "worn", "attached", "root"]
+          },
+          "parent_asset_id": {
+            "type": ["string", "null"]
+          },
+          "attachment_point": {
+            "type": "string"
+          },
+          "transparency_target": {
+            "type": "boolean"
+          },
+          "preserve_exact_design": {
+            "type": "boolean"
+          },
+          "cutout_prompt": {
+            "type": "string"
+          },
+          "regeneration_prompt": {
+            "type": "string"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "qa": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "batch_report": {
+      "type": "object",
+      "required": [
+        "total_assets",
+        "extracted",
+        "regenerated",
+        "inferred",
+        "blocked_by_occlusion",
+        "failed",
+        "transparent_assets",
+        "qa_failed_assets",
+        "next_priority"
+      ],
+      "properties": {
+        "total_assets": {"type": "integer", "minimum": 0},
+        "extracted": {"type": "integer", "minimum": 0},
+        "regenerated": {"type": "integer", "minimum": 0},
+        "inferred": {"type": "integer", "minimum": 0},
+        "blocked_by_occlusion": {"type": "integer", "minimum": 0},
+        "failed": {"type": "integer", "minimum": 0},
+        "transparent_assets": {"type": "integer", "minimum": 0},
+        "qa_failed_assets": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "next_priority": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    }
+  }
+}
