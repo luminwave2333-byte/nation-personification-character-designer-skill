@@ -1,0 +1,95 @@
+manifest_version: "1.1"
+character_id: ""
+mode: AUTO_DECOMPOSE
+
+source_profile:
+  source_type: CHARACTER_SHEET
+  subject_count: 0
+  panel_count_estimate: 0
+  background_complexity: MEDIUM
+  text_density: MEDIUM
+  source_resolution_quality: MEDIUM
+  extraction_feasibility: MEDIUM
+
+subjects:
+  - subject_id: SUBJECT_01
+    description: ""
+    spatial_position: ""
+    selected_for_primary_cutout: false
+
+assets:
+  - asset_id: ""
+    asset_type: CHARACTER_FULLBODY
+    priority: P0
+    source_visibility: FULL
+    source_status: SOURCE_DERIVED
+    occluded: false
+    bbox_description: ""
+    edge_complexity: MEDIUM
+    alpha_uncertain: false
+    character_dependency: root
+    parent_asset_id: null
+    attachment_point: ""
+    transparency_target: true
+    preserve_exact_design: true
+    cutout_prompt: ""
+    regeneration_prompt: ""
+    filename: ""
+    qa:
+      subject_identity_preserved: false
+      silhouette_preserved: false
+      color_blocking_preserved: false
+      asymmetry_preserved: false
+      prop_geometry_preserved: false
+      background_removed: false
+      alpha_edge_clean: false
+      no_white_halo: false
+      no_invented_hidden_detail: false
+      source_vs_inferred_labeled: false
+
+material_assets:
+  - material_id: ""
+    name: ""
+    material_family: FABRIC
+    material_asset_type: SOURCE_PATCH
+    source_status: SOURCE_DERIVED
+    color_role: BASE
+    cultural_or_historical_context: ""
+    surface_properties:
+      roughness: MEDIUM
+      reflectivity: LOW
+      translucency: LOW
+      weave_or_grain: ""
+    video_risk: LOW
+    simplification: ""
+    filename: ""
+
+prop_assets:
+  - prop_id: ""
+    name: ""
+    class: weapon
+    source_visibility: FULL
+    source_status: SOURCE_DERIVED
+    silhouette_role: ""
+    action_role: ""
+    material_stack: []
+    main_axis: diagonal
+    symmetry: asymmetric
+    moving_parts: []
+    character_dependency: held
+    attachment_point: ""
+    cutout_prompt: ""
+    turnaround_prompt: ""
+    detail_prompt: ""
+    filename: ""
+
+batch_report:
+  total_assets: 0
+  extracted: 0
+  regenerated: 0
+  inferred: 0
+  blocked_by_occlusion: 0
+  failed: 0
+  transparent_assets: 0
+  qa_failed_assets: []
+  next_priority: []
