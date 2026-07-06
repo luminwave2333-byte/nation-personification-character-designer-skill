@@ -1,0 +1,95 @@
+character_id: ""
+target: ""
+object_type: STATE
+mode: DESIGN
+
+research_summary:
+  evidence_ledger: []
+  primary_era: ""
+  secondary_era: ""
+  modern_bridge: ""
+
+core_design_sentence: ""
+core_tension: ""
+
+silhouette:
+  primary_shape: ""
+  width_anchor: ""
+  verticality: 0
+  mass: medium
+  motion_direction: ""
+  long_range_identifiers: []
+
+garment_architecture:
+  base_layer: ""
+  torso_layer: ""
+  shoulder_layer: ""
+  waist_layer: ""
+  lower_layer: ""
+  motion_layer: ""
+  foot_layer: ""
+
+motif_hierarchy:
+  H1_primary_totem: ""
+  H2_secondary_systems: []
+  H3_micro_details: []
+
+palette_roles:
+  base: ""
+  structure: ""
+  attack: ""
+  motion: ""
+  metal_or_accent: ""
+
+materials:
+  traditional: ""
+  modern: ""
+  bridge: ""
+
+head_identity:
+  hair_mass: ""
+  fringe_shape: ""
+  headpiece_shape: ""
+  headpiece_fixing_logic: ""
+  eye_language: ""
+  makeup_focus: ""
+  motion_accent: ""
+
+prop:
+  item: ""
+  evidence_reason: ""
+  silhouette_role: ""
+  action_role: ""
+
+asymmetry:
+  type: ""
+  anchor: ""
+
+dynamic_elements: []
+
+identity_anchor: {}
+no_redesign_anchor: ""
+video_risk_profile: {}
+
+annotation_text: []
+
+prompts:
+  character_sheet_prompt: ""
+  key_art_prompt: ""
+  video_safe_prompt: ""
+  detail_sheet_prompt: ""
+  negative_prompt: ""
+
+qa:
+  recognizability_without_flag: 0
+  cultural_evidence: 0
+  silhouette: 0
+  motif_hierarchy: 0
+  modern_bridge: 0
+  material_story: 0
+  tension: 0
+  asymmetry: 0
+  ai_stability: 0
+  originality: 0
+  total: 0
+  status: REVISE

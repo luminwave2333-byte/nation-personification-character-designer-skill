@@ -1,0 +1,118 @@
+{
+  "character_id": "china_method_example_01",
+  "target": "China / Chinese-civilizational national personification",
+  "object_type": "HYBRID",
+  "core_design_sentence": "A contemporary ceremonial strategist shaped by vertical written rhythm, controlled S-curve movement and a modern formal silhouette; this example demonstrates field structure only and is not a reproduction of the supplied reference character.",
+  "core_tension": "civilization x controlled force",
+  "silhouette": {
+    "primary_shape": "long_X",
+    "width_anchor": "structured_shoulders_and_split_long_panels",
+    "verticality": 82,
+    "mass": "medium",
+    "motion_direction": "vertical_with_single_S_curve",
+    "long_range_identifiers": [
+      "low flat metal headpiece with one rear arc",
+      "long split ceremonial coat",
+      "single scroll-ruler prop held diagonally"
+    ]
+  },
+  "garment_architecture": {
+    "base_layer": "deep vermilion narrow standing-collar inner layer",
+    "torso_layer": "ivory long tailored ceremonial coat with hidden closure",
+    "shoulder_layer": "flat rectangular shoulder planes with no epaulettes",
+    "waist_layer": "black lacquer-like narrow waist bridge",
+    "lower_layer": "two long front panels and one rear panel, not a short skirt",
+    "motion_layer": "one rear ink-silk ribbon and two short metal-thread tabs",
+    "foot_layer": "black low-heeled square-toe boots with S-curve side seam"
+  },
+  "motif_hierarchy": {
+    "H1_primary_totem": "one abstract S-curve dragon-derived structural seam running from rear shoulder to coat hem",
+    "H2_secondary_systems": [
+      "vertical ink-density rhythm on two selected inner panels",
+      "metallic-thread knot construction at waist hardware"
+    ],
+    "H3_micro_details": [
+      "seal-red square cuff mark",
+      "black lacquer edge piping",
+      "single jade-toned prop joint"
+    ]
+  },
+  "palette_roles": {
+    "base": "ivory white",
+    "structure": "ink black",
+    "attack": "vermilion red",
+    "motion": "muted warm gold",
+    "metal_or_accent": "brushed silver with one desaturated jade joint"
+  },
+  "materials": {
+    "traditional": "silk-like matte textile",
+    "modern": "brushed aluminum hardware",
+    "bridge": "metallic-thread embroidery used as structural seam"
+  },
+  "head_identity": {
+    "hair_mass": "single heavy straight black back mass, shoulder-width, no twin ponytails",
+    "fringe_shape": "asymmetric blunt side fringe",
+    "headpiece_shape": "low horizontal silver bar with one rear arc",
+    "headpiece_fixing_logic": "integrated hair comb and two visible side clamps",
+    "eye_language": "narrow calm gaze",
+    "makeup_focus": "very small vermilion lower-eye accent",
+    "motion_accent": "none on the temples; motion is moved to rear ribbon"
+  },
+  "prop": {
+    "item": "mechanical scroll-ruler",
+    "evidence_reason": "design inference combining written-culture rhythm with modern measurement/institutional order",
+    "silhouette_role": "single diagonal break across the vertical costume",
+    "action_role": "unfolds into a straight measuring blade or projection frame"
+  },
+  "asymmetry": {
+    "type": "split_material",
+    "anchor": "the left inner coat panel contains broad ink rhythm; the right inner panel is blank ivory"
+  },
+  "dynamic_elements": [
+    "rear silk ribbon",
+    "long coat panels"
+  ],
+  "identity_anchor": {
+    "face_shape": "slender mature oval face",
+    "eye_shape": "narrow dark eyes with small red lower-eye accent",
+    "hair": "single straight black back hair mass with asymmetric side fringe",
+    "headpiece": "low silver horizontal bar and one rear arc",
+    "upper_garment": "ivory long tailored ceremonial coat with vermilion standing-collar inner layer",
+    "lower_garment": "split long coat panels, no short skirt",
+    "leg_asymmetry": "none; asymmetry is on inner coat panels",
+    "footwear": "black square-toe low-heel boots",
+    "prop": "mechanical scroll-ruler",
+    "base_color_blocking": "ivory body, black structural edges, vermilion inner collar, muted gold motion hardware"
+  },
+  "no_redesign_anchor": "preserve the same identity, same facial structure, same single back hair mass, same low silver bar headpiece, same long ivory coat construction, same left-panel ink asymmetry, same boots, same mechanical scroll-ruler and same color blocking; do not redesign the character",
+  "video_risk_profile": {
+    "text_risk": "LOW",
+    "motif_risk": "MEDIUM",
+    "hair_risk": "LOW",
+    "asymmetry_risk": "MEDIUM",
+    "prop_risk": "MEDIUM",
+    "recommended_i2v": true,
+    "recommended_control_image": true,
+    "recommended_detail_simplification": "keep the ink panel as broad tonal strokes, not readable calligraphy"
+  },
+  "prompts": {
+    "character_sheet_prompt": "A premium original 2D anime character design sheet for a Chinese-civilizational national personification, a contemporary ceremonial strategist shaped by vertical written rhythm, controlled S-curve movement and modern formal tailoring. Main full-body character on the left, long X silhouette, single heavy straight black back hair mass with asymmetric blunt side fringe, low horizontal silver headpiece with one rear arc and visible side clamps, narrow calm dark eyes with a tiny vermilion lower-eye accent. She wears an ivory long tailored ceremonial coat with hidden closure over a deep vermilion narrow standing-collar inner layer, flat rectangular shoulder planes, a black lacquer-like narrow waist bridge, two long front panels and one rear panel, black square-toe low-heel boots. One abstract S-curve dragon-derived structural seam runs from rear shoulder to coat hem, no full dragon illustration. Secondary broad vertical ink-density rhythm appears only on the left inner coat panel, metallic-thread knot construction at the waist. A mechanical scroll-ruler is held diagonally across the vertical costume. Ivory dominates, ink-black defines structural edges, vermilion is restricted to the inner collar and eye accent, muted warm gold appears only on two moving hardware tabs, brushed silver hardware with one desaturated jade joint. Full-body front view, back garment study, head close-up, upper garment construction, lower garment front and back, footwear study, prop study, motif breakdown, material swatches, palette swatches, clean white design-paper background, thin technical leader lines, reserved Chinese annotation zones, professional game character concept art, precise linework, coherent motif hierarchy, fully original design.",
+    "key_art_prompt": "Full-body original character key art of the same Chinese-civilizational ceremonial strategist, slender mature oval face, narrow dark eyes with a tiny red lower-eye accent, single straight black back hair mass with asymmetric side fringe, low silver horizontal bar headpiece with one rear arc, ivory long tailored ceremonial coat, vermilion standing-collar inner layer, black lacquer waist bridge, split long coat panels, black square-toe low-heel boots, single left inner panel with broad ink tonal rhythm, one abstract S-curve structural seam, mechanical scroll-ruler held diagonally, front three-quarter standing pose, clean readable silhouette, controlled asymmetry, neutral cinematic lighting, plain light background, character identity preservation reference, no redesign, no extra accessories, no alternate costume.",
+    "video_safe_prompt": "Same character identity, same face, same single straight black back hair mass, same low silver bar headpiece with one rear arc, same ivory long ceremonial coat, same vermilion inner collar, same black waist bridge, same split long panels, same black boots and same mechanical scroll-ruler. Simplified large cultural motifs only, one broad S-curve structural seam, broad ink tonal strokes only on the left inner panel, no dense small calligraphy, no tiny text, no micro-pattern flicker. Maximum two dynamic element types: one rear silk ribbon and long coat panels. One primary action only. One controlled camera movement only. Preserve left-right asymmetry exactly: ink rhythm remains on the left inner coat panel; do not swap sides. Preserve the same identity, same facial structure, same hairstyle, same headpiece, same clothing construction, same asymmetry, same footwear, same prop and same color blocking; do not redesign the character.",
+    "negative_prompt": "copy of an existing copyrighted character, direct replica of the reference artwork, twin high ponytails, silver crown with twin yellow tassels, short white blazer, short calligraphy skirt, single black thigh-high stocking, black and white floral heels, Chinese straight sword, giant dragon print, waist tag reading China, flag wrapped around the body, symbol overload, random historical collage, dense unreadable text, tiny calligraphy covering the whole outfit, extra accessories, bent prop, asymmetry swapped, wrong color blocking, low-detail face, malformed hands, cluttered concept sheet"
+  },
+  "qa": {
+    "recognizability_without_flag": 18,
+    "cultural_evidence": 13,
+    "silhouette": 14,
+    "motif_hierarchy": 10,
+    "modern_bridge": 10,
+    "material_story": 9,
+    "tension": 5,
+    "asymmetry": 5,
+    "ai_stability": 5,
+    "originality": 5,
+    "total": 94,
+    "status": "READY"
+  }
+}

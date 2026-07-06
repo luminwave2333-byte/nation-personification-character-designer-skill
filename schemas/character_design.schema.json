@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NationPersonificationCharacterDesign",
+  "type": "object",
+  "required": [
+    "character_id",
+    "target",
+    "object_type",
+    "core_design_sentence",
+    "silhouette",
+    "garment_architecture",
+    "motif_hierarchy",
+    "palette_roles",
+    "materials",
+    "head_identity",
+    "prop",
+    "identity_anchor",
+    "prompts",
+    "qa"
+  ],
+  "properties": {
+    "character_id": {"type": "string"},
+    "target": {"type": "string"},
+    "object_type": {"enum": ["STATE", "CIVILIZATION", "ETHNIC", "REGION", "DYNASTY", "INSTITUTION", "ERA", "HYBRID"]},
+    "core_design_sentence": {"type": "string"},
+    "core_tension": {"type": "string"},
+    "research_summary": {"type": "object"},
+    "silhouette": {
+      "type": "object",
+      "required": ["primary_shape", "long_range_identifiers"],
+      "properties": {
+        "primary_shape": {"type": "string"},
+        "width_anchor": {"type": "string"},
+        "verticality": {"type": "integer", "minimum": 0, "maximum": 100},
+        "mass": {"enum": ["light", "medium", "heavy"]},
+        "motion_direction": {"type": "string"},
+        "long_range_identifiers": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string"}}
+      }
+    },
+    "garment_architecture": {
+      "type": "object",
+      "required": ["base_layer", "torso_layer", "shoulder_layer", "waist_layer", "lower_layer", "motion_layer", "foot_layer"]
+    },
+    "motif_hierarchy": {
+      "type": "object",
+      "required": ["H1_primary_totem", "H2_secondary_systems", "H3_micro_details"],
+      "properties": {
+        "H1_primary_totem": {"type": "string"},
+        "H2_secondary_systems": {"type": "array", "minItems": 1, "maxItems": 2, "items": {"type": "string"}},
+        "H3_micro_details": {"type": "array", "maxItems": 3, "items": {"type": "string"}}
+      }
+    },
+    "palette_roles": {"type": "object"},
+    "materials": {"type": "object"},
+    "head_identity": {"type": "object"},
+    "prop": {"type": "object"},
+    "asymmetry": {"type": "object"},
+    "dynamic_elements": {"type": "array", "maxItems": 3, "items": {"type": "string"}},
+    "identity_anchor": {"type": "object"},
+    "no_redesign_anchor": {"type": "string"},
+    "video_risk_profile": {"type": "object"},
+    "annotation_text": {"type": "array"},
+    "prompts": {
+      "type": "object",
+      "required": ["character_sheet_prompt", "key_art_prompt", "video_safe_prompt", "negative_prompt"]
+    },
+    "qa": {
+      "type": "object",
+      "required": ["total", "status"],
+      "properties": {
+        "total": {"type": "integer", "minimum": 0, "maximum": 100},
+        "status": {"enum": ["READY", "REVISE", "FAIL"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NationPersonificationCastDesign",
+  "type": "object",
+  "required": ["cast_id", "theme", "difference_matrix", "characters", "cast_prompt", "qa"],
+  "properties": {
+    "cast_id": {"type": "string"},
+    "theme": {"type": "string"},
+    "difference_matrix": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["target", "silhouette", "line_direction", "surface_density", "motion_element", "material_family", "prop_line"]
+      }
+    },
+    "characters": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"$ref": "character_design.schema.json"}
+    },
+    "cast_prompt": {"type": "string"},
+    "qa": {
+      "type": "object",
+      "required": ["silhouette_overlap", "prop_overlap", "color_overlap", "status"],
+      "properties": {
+        "silhouette_overlap": {"type": "number", "minimum": 0, "maximum": 1},
+        "prop_overlap": {"type": "number", "minimum": 0, "maximum": 1},
+        "color_overlap": {"type": "number", "minimum": 0, "maximum": 1},
+        "status": {"enum": ["READY", "REVISE", "FAIL"]}
+      }
+    }
+  }
+}
