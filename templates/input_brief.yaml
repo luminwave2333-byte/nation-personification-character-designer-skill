@@ -1,6 +1,24 @@
-mode: DESIGN
+mode: IMAGE_GENERATE
+available_modes:
+  - IMAGE_GENERATE
+  - AUTO_DECOMPOSE
+  - CHARACTER_SPLIT
+  - MATERIAL_SPLIT
+  - PROP_SPLIT
+  - CUTOUT
+  - ASSET_PACK
+  - VIDEO_CONTINUITY
+  - ANALYZE
+  - REDESIGN
+  - CAST_SET
+  - PROMPT_ONLY
+
 target: ""
 object_type: STATE
+source_image_present: false
+selected_subject: auto
+character_id: auto
+
 character_gender: auto
 character_age_read: adult_20s
 personality: auto
@@ -11,6 +29,19 @@ modern_bridge: auto
 symbol_literalness: low_to_medium
 presentation: premium_2d_anime_concept_sheet
 sheet_ratio: 3:2_landscape
+
+asset_pipeline:
+  auto_decompose: false
+  character_split: false
+  material_split: false
+  prop_split: false
+  transparent_cutout: false
+  build_asset_pack: false
+  reconstruction_allowed: false
+  preserve_exact_design: true
+  target_background: transparent
+  output_asset_manifest: true
+
 video_safe: true
 image_model: auto
 output_language: zh-CN
